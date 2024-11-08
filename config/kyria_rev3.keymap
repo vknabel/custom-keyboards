@@ -156,48 +156,40 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&kp ESCAPE        &kp Q                 &kp W                 &kp E                     &kp R                   &kp T                                                                                                                      &kp Y       &kp U                    &kp I                      &kp O                 &kp P                          &kp MINUS
-&kp GRAVE         &home_row LEFT_GUI A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &home_row LEFT_SHIFT F  &kp G                                                                                                                      &kp H       &home_row RIGHT_SHIFT J  &home_row RIGHT_CONTROL K  &home_row LEFT_ALT L  &home_row RIGHT_GUI SEMICOLON  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z                 &kp X                 &kp C                     &kp V                   &kp B         &mo 1                  &kp LSHFT                  &mo 2                              &kp LSHFT               &kp N       &kp M                    &kp COMMA                  &kp DOT               &kp FSLH                       &home_row RC(RIGHT_GUI) SINGLE_QUOTE
-                                                              &kp LEFT_CONTROL          &kp LEFT_ALT            &kp LEFT_GUI  &tap_or_layer 2 SPACE  &thumb_mod LEFT_SHIFT TAB  &thumb_mod LC(LEFT_GUI) BACKSPACE  &tap_or_layer 1 RETURN  &kp DELETE  &kp LEFT_BRACKET         &kp RIGHT_BRACKET
+&kp ESCAPE        &kp Q  &kp W  &kp E             &kp R         &kp T                                                                                           &kp Y       &kp U             &kp I              &kp O    &kp P     &kp MINUS
+&kp GRAVE         &kp A  &kp S  &kp D             &kp F         &kp G                                                                                           &kp H       &kp J             &kp K              &kp L    &kp SEMI  &kp BACKSLASH
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C             &kp V         &kp B         &sl 3        &mo 2               &mo 1                              &sl 3         &kp N       &kp M             &kp COMMA          &kp DOT  &kp FSLH  &mt RC(RIGHT_GUI) SINGLE_QUOTE
+                                &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_GUI  &lt 1 SPACE  &mt TAB LEFT_SHIFT  &thumb_mod LC(LEFT_GUI) BACKSPACE  &lt 2 RETURN  &kp DELETE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        num+sym {
+        movement {
             bindings = <
-&trans  &kp NUMBER_6  &kp N7        &kp N8           &kp N9        &kp N0                                  &umlaut_a 0 0     &umlaut_o 0 0      &umlaut_u 0 0         &umlaut_sz 0 0         &kp MINUS  &kp EQUAL
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp N5                                  &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans  &kp PLUS      &kp MINUS     &kp KP_MULTIPLY  &trans        &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans     &trans
-                                    &trans           &trans        &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans
+&kp LG(LA(LC(TAB)))  &trans                &trans                &trans                &trans                &trans                                          &trans          &trans         &trans        &trans     &trans  &trans
+&kp LS(LG(S))        &kp LG(LS(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LS(N5))                                  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&kp LG(S)            &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &kp LG(NUMBER_3)      &kp LG(NUMBER_4)      &kp LG(N5)      &trans  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans  &trans
+                                                                 &trans                &trans                &trans          &trans  &trans  &trans  &trans  &trans          &trans         &trans
             >;
         };
 
-        movement {
+        num+sym {
+            bindings = <
+&trans      &kp EXCL      &kp AT        &kp POUND     &kp DOLLAR    &kp PERCENT                                  &kp CARET         &kp AMPS           &kp ASTRK             &trans                 &kp MINUS  &kp EQUAL
+&kp COMMA   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                                       &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp BACKSLASH
+&kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp SINGLE_QUOTE
+                                        &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans            &trans             &trans
+            >;
+        };
+
+        adjust {
             bindings = <
 &bt BT_CLR  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                                  &trans          &trans         &trans        &trans     &trans  &trans
 &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans      &trans         &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans  &trans
                                           &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans          &trans         &trans
             >;
-        };
-
-        adjust {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
-            // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
-            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
-
-            bindings = <
-&trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &bt BT_SEL 3  &bt BT_SEL 4  &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
