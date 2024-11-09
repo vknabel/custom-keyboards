@@ -121,7 +121,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ESC_ADJUST";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE>, <&none>, <&tog 3>;
+            bindings = <&kp ESCAPE>, <&none>, <&sl 3>;
         };
     };
 
