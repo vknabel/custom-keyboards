@@ -21,4 +21,4 @@ include:
   - board: nice_nano_v2
     shield: kyria_rev3_left
   - board: nice_nano_v2
-    shield: kyria_rev3_right niceview
+    shield: kyria_rev3_right nice_view
