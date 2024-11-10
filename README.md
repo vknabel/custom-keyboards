@@ -48,7 +48,7 @@ It has an aggressive pinky-stagger, a large thumb cluster, but no number row.
 > [!warning]
 > This layout currently changes a lot and has no overview yet.
 
-![Kyria build with copper top plate](./images/kryia-keyboard.jpeg)
+![Kyria build with copper top plate](./images/kyria-keyboard.jpeg)
 
 ## ZSA Voyager
 
