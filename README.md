@@ -96,12 +96,12 @@ The first split keyboard that I soldered myself. Initially I thought the sheer a
 
 The base layer is pretty standard with prominent locations for space, tab and shift on the left side. The right thumb cluster includes enter, backspace and alt.
 
-![](./images/voyager-layer-base.png)
+![](./images/lily58-layer-base.png)
 
 The Number and Symbols layer spreads the keypad on the left side in two rows. The right side includes all sorts of brackets and German umlauts.
 
-![](./images/voyager-layer-num-sym.png)
+![](./images/lily58-layer-num-sym.png)
 
 The Board setting and Movement layer starts with LED settings on the left side and places cursor movements on top of `hjkl` to reflect vim motions. Below are `Home`, `Page Down` etc and on top are mouse movements. All in the same ordern.
 
-![](./images/voyager-layer-brd-mov.png)
+![](./images/lily58-layer-brd-mov.png)
