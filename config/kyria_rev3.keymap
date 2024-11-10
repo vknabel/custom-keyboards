@@ -74,6 +74,13 @@
             bindings = <&kp LC(LS(U)) &kp KP_NUMBER_1 &kp LS(E) &kp KP_NUMBER_9 &kp LS(E) &kp SPACE>;
             label = "UMLAUT_SZ_BIG";
         };
+
+        bt_sel_os: bt_os {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &bt BT_SEL MACRO_PLACEHOLDER>;
+            label = "BT_OS";
+        };
     };
 
     behaviors {
@@ -128,7 +135,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
+        base {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
             // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
@@ -136,21 +143,21 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&esc_adjust       &kp Q        &kp W           &kp E           &kp R             &kp T                                                                       &kp Y        &kp U              &kp I              &kp O           &kp P           &kp MINUS
-&kp GRAVE         &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                                                                       &kp H        &mt RIGHT_SHIFT J  &mt RCMD K         &mt LEFT_ALT L  &mt RCTRL SEMI  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z        &kp X           &kp C           &kp V             &kp B        &sl 2               &sl 1  &sl 2  &sl 1                        &kp N        &kp M              &kp COMMA          &kp DOT         &kp FSLH        &mt RC(RIGHT_GUI) SINGLE_QUOTE
-                                               &sk LEFT_ALT    &sk LEFT_GUI      &lt 2 SPACE  &mt LEFT_SHIFT TAB  &none  &none  &mt RC(RIGHT_GUI) BACKSPACE  &lt 1 ENTER  &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+&esc_adjust       &kp Q       &kp W           &kp E        &kp R         &kp T                                                                                     &kp Y         &kp U             &kp I              &kp O           &kp P          &kp MINUS
+&kp GRAVE         &mt LGUI A  &mt LEFT_ALT S  &mt LCTRL D  &kp F         &kp G                                                                                     &kp H         &kp J             &mt RCTRL K        &mt LEFT_ALT L  &mt RGUI SEMI  &kp BACKSLASH
+&kp LEFT_CONTROL  &kp Z       &kp X           &kp C        &kp V         &kp B      &sl 2        &sl 5               &sl 2                            &sl 5        &kp N         &kp M             &kp COMMA          &kp DOT         &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
+                                              &sk LCMD     &sk LEFT_ALT  &sk LCTRL  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt RG(RIGHT_CONTROL) BACKSPACE  &lt 5 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        raise {
+        base-mac {
             bindings = <
-&trans      &kp EXCL      &kp AT        &kp POUND     &kp DOLLAR    &kp PERCENT                                  &kp CARET         &kp AMPS           &kp ASTRK             &trans                 &kp MINUS  &kp EQUAL
-&kp COMMA   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                                       &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp BACKSLASH
-&kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp SINGLE_QUOTE
-                                        &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans            &trans             &trans
+&trans    &trans       &trans  &trans      &trans  &trans                                            &trans  &trans  &trans      &trans  &trans               &trans
+&trans    &mt LCTRL A  &trans  &mt LGUI D  &trans  &trans                                            &trans  &trans  &mt RGUI K  &trans  &mt RCTRL SEMICOLON  &trans
+&kp LCMD  &trans       &trans  &trans      &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans               &trans
+                               &sk LCTRL   &trans  &sk LEFT_COMMAND  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -163,13 +170,40 @@
             >;
         };
 
+        lower-mac {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &kp LA(A)  &kp LA(O)  &kp LA(U)  &kp LA(S)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+            >;
+        };
+
+        raise {
+            bindings = <
+&trans      &kp EXCL      &kp AT        &kp POUND     &kp DOLLAR    &kp PERCENT                                  &kp CARET         &kp AMPS           &kp ASTRK             &trans                 &kp MINUS  &kp EQUAL
+&kp COMMA   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                                       &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp BACKSLASH
+&kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp SINGLE_QUOTE
+                                        &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans            &trans             &trans
+            >;
+        };
+
         adjust {
             bindings = <
-&tog 3      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                                  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO  &trans
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                   &kp C_PREV                &kp C_PLAY_PAUSE      &kp C_STOP            &kp C_NEXT                &kp C_VOL_DN           &kp C_VOLUME_UP
-&trans      &trans         &trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans                &trans                    &trans                 &trans
-                                          &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans
+&tog 3      &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4                                  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO  &trans
+&bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                   &kp C_PREV                &kp C_PLAY_PAUSE      &kp C_STOP            &kp C_NEXT                &kp C_VOL_DN           &kp C_VOLUME_UP
+&trans      &bt_sel_os 1 0  &bt_sel_os 0 1  &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans                &trans                    &trans                 &trans
+                                            &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        lower-mac {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
