@@ -199,7 +199,7 @@
             bindings = <
 &tog 3      &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4                                  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO  &trans
 &bt BT_CLR  &bt_sel_os 1 0  &bt_sel_os 0 1  &bt_sel_os 1 2  &bt BT_SEL 3   &bt BT_SEL 4                                   &kp C_PREV                &kp C_PLAY_PAUSE      &kp C_STOP            &kp C_NEXT                &kp C_VOL_DN           &kp C_VOLUME_UP
-&trans      &trans          &trans          &trans          &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans                &trans                    &trans                 &trans
+&trans      &tog 1          &trans          &trans          &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans                &trans                    &trans                 &trans
                                             &trans          &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans
             >;
         };
