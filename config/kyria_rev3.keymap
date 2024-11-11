@@ -22,56 +22,56 @@
         umlaut_a_small: umlaut_a_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(C) &kp KP_NUMBER_4 &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp C &kp KP_NUMBER_4 &kp SPACE>;
             label = "UMLAUT_A_SMALL";
         };
 
         umlaut_a_big: umlaut_a_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(E) &kp KP_NUMBER_4 &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp E &kp KP_NUMBER_4 &kp SPACE>;
             label = "UMLAUT_A_UP";
         };
 
         umlaut_o_big: umlaut_o_big {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(D) &kp KP_NUMBER_6 &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp D &kp KP_NUMBER_6 &kp SPACE>;
             label = "UMLAUT_O_BIG";
         };
 
         umlaut_o_small: umlaut_o_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(F) &kp KP_NUMBER_6 &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp F &kp KP_NUMBER_6 &kp SPACE>;
             label = "UMLAUT_O_SMALL";
         };
 
         umlaut_u_small: umlaut_u_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(F) &kp LS(C) &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp F &kp C &kp SPACE>;
             label = "UMLAUT_U_SMALL";
         };
 
         umlaut_u_big: umlaut_u_big {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(D) &kp LS(C) &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp D &kp C &kp SPACE>;
             label = "UMLAUT_U_BIG";
         };
 
         umlaut_sz_small: umlaut_sz_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp LS(U) &kp LS(D) &kp LS(F) &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp U &kp D &kp F &kp SPACE>;
             label = "UMLAUT_SZ_SMALL";
         };
 
         umlaut_sz_big: umlaut_sz_big {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp KP_NUMBER_1 &kp LS(E) &kp KP_NUMBER_9 &kp LS(E) &kp SPACE>;
+            bindings = <&kp LC(LS(U)) &kp KP_NUMBER_1 &kp E &kp KP_NUMBER_9 &kp E &kp SPACE>;
             label = "UMLAUT_SZ_BIG";
         };
 
