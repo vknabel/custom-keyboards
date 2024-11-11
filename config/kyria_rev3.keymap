@@ -19,14 +19,14 @@
 
 / {
     macros {
-        umlaut_a_small: umlaut_a_small {
+        umlaut_a_big: umlaut_a_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp C &kp KP_NUMBER_4 &kp SPACE>;
             label = "UMLAUT_A_SMALL";
         };
 
-        umlaut_a_big: umlaut_a_up {
+        umlaut_a_small: umlaut_a_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp E &kp KP_NUMBER_4 &kp SPACE>;
@@ -97,7 +97,7 @@
             bindings = <&umlaut_a_big>, <&umlaut_a_small>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
         };
 
@@ -107,7 +107,7 @@
             bindings = <&umlaut_o_big>, <&umlaut_o_small>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
         };
 
@@ -117,7 +117,7 @@
             bindings = <&umlaut_u_big>, <&umlaut_u_small>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
         };
 
@@ -127,7 +127,7 @@
             bindings = <&umlaut_sz_big>, <&umlaut_sz_small>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
         };
 
