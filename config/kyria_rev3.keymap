@@ -137,6 +137,28 @@
             #binding-cells = <0>;
             bindings = <&kp ESCAPE>, <&none>, <&sl 5>;
         };
+
+        hr_l: hr_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 18 34 35 36 37 38 39 6 7 8 9 10 11 18 19 20 21 22 23 34 35 36 37 38 39>;
+        };
+
+        hr_r: hr_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HR_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
+        };
     };
 
     keymap {
@@ -150,10 +172,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&esc_adjust       &kp Q       &kp W           &kp E        &kp R         &kp T                                                                                     &kp Y         &kp U             &kp I              &kp O           &kp P          &kp MINUS
-&kp GRAVE         &mt LGUI A  &mt LEFT_ALT S  &mt LCTRL D  &kp F         &kp G                                                                                     &kp H         &kp J             &mt RCTRL K        &mt LEFT_ALT L  &mt RGUI SEMI  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z       &kp X           &kp C        &kp V         &kp B      &sl 2        &sl 4               &sl 2                            &sl 4        &kp N         &kp M             &kp COMMA          &kp DOT         &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
-                                              &sk LCMD     &sk LEFT_ALT  &sk LCTRL  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt RG(RIGHT_CONTROL) BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&esc_adjust       &kp Q         &kp W             &kp E          &kp R         &kp T                                                                                     &kp Y         &kp U             &kp I              &kp O             &kp P            &kp MINUS
+&kp GRAVE         &hr_l LGUI A  &hr_l LEFT_ALT S  &hr_l LCTRL D  &kp F         &kp G                                                                                     &kp H         &kp J             &hr_r RCTRL K      &hr_r LEFT_ALT L  &hr_r RGUI SEMI  &kp BACKSLASH
+&kp LEFT_CONTROL  &kp Z         &kp X             &kp C          &kp V         &kp B      &sl 2        &sl 4               &sl 2                            &sl 4        &kp N         &kp M             &kp COMMA          &kp DOT           &kp FSLH         &mt RC(RIGHT_GUI) SINGLE_QUOTE
+                                                  &sk LCMD       &sk LEFT_ALT  &sk LCTRL  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt RG(RIGHT_CONTROL) BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
