@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 /* Uncomment this block if using RGB
 &led_strip {
@@ -202,10 +201,10 @@
 
         lower {
             bindings = <
-&trans  &kp LC(LG(LA(TAB)))       &trans                    &trans                    &trans                    &trans                                             &umlaut_a 0 0   &umlaut_o 0 0  &umlaut_u 0 0  &umlaut_sz 0 0  &trans             &trans
-&trans  &kp LG(LS(LC(NUMBER_1)))  &kp LS(LG(LC(NUMBER_2)))  &kp LS(LG(LC(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LG(LS(LC(S)))                                  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW   &kp RIGHT       &trans             &trans
-&trans  &kp LG(LC(NUMBER_1))      &kp LG(LC(NUMBER_2))      &kp LG(LC(NUMBER_3))      &kp LG(LC(NUMBER_4))      &kp LG(LC(S))      &trans  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &kt LG(LC(SLASH))  &trans
-                                                            &trans                    &trans                    &trans             &trans  &trans  &trans  &trans  &trans          &trans         &trans
+&trans               &trans                    &trans                    &trans                    &trans                    &trans                                             &umlaut_a 0 0   &umlaut_o 0 0  &umlaut_u 0 0  &umlaut_sz 0 0  &trans  &trans
+&kp LC(LG(LS(TAB)))  &kp LG(LS(LC(NUMBER_1)))  &kp LS(LG(LC(NUMBER_2)))  &kp LS(LG(LC(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LG(LS(LC(S)))                                  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW   &kp RIGHT       &trans  &trans
+&kp LC(LG(TAB))      &kp LG(LC(NUMBER_1))      &kp LG(LC(NUMBER_2))      &kp LG(LC(NUMBER_3))      &kp LG(LC(NUMBER_4))      &kp LG(LC(S))      &trans  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &trans  &trans
+                                                                         &trans                    &trans                    &trans             &trans  &trans  &trans  &trans  &trans          &trans         &trans
             >;
         };
 
