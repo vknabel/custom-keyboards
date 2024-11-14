@@ -183,7 +183,7 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&esc_adjust         &kp Q         &kp W             &kp E          &kp R         &kp T                                                                                                 &kp Y         &kp U             &kp I              &kp O             &kp P            &kp MINUS
+&lt 5 ESCAPE        &kp Q         &kp W             &kp E          &kp R         &kp T                                                                                                 &kp Y         &kp U             &kp I              &kp O             &kp P            &kp MINUS
 &mt LC(LCMD) GRAVE  &hr_l LGUI A  &hr_l LEFT_ALT S  &hr_l LCTRL D  &kp F         &kp G                                                                                                 &kp H         &kp J             &hr_r RCTRL K      &hr_r LEFT_ALT L  &hr_r RGUI SEMI  &kp BACKSLASH
 &kp LEFT_CONTROL    &kp Z         &kp X             &kp C          &kp V         &kp B         &sl 4        &sk LC(LEFT_COMMAND)  &sk RC(RIGHT_COMMAND)                   &sl 2        &kp N         &kp M             &kp COMMA          &kp DOT           &kp FSLH         &mt RC(RIGHT_GUI) SINGLE_QUOTE
                                                     &sk LCMD       &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &mt_repeat RG(RIGHT_CONTROL) BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
