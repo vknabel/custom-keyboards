@@ -45,10 +45,28 @@ Layer toggles are currently always positioned at the thumbs.
 The Kyria is the latest addition to my collection and my first wireless ZMK build. The goal was to get a silent and portable keyboard.
 It has an aggressive pinky-stagger, a large thumb cluster, but no number row.
 
-> [!warning]
-> This layout currently changes a lot and has no overview yet.
-
 ![Kyria build with copper top plate](./images/kyria-keyboard.jpeg)
+
+The base layer of my Kyria is pretty standard. Don't get too much distracted by the large amount of thumb keys - some are redundant and less important. I mostly use the lower 6 thumb keys which provide access to backspace, space, tab, enter, shift and access to the _lower_ and _raise_ layers.
+Also note that there are multiple instances of `super+ctrl` to control Kitty and Hyprland or AeroSpace.
+
+![](./images/kyria-layer-base.png)
+
+Next up is the **lower** layer: it mostly focuses on movement. The left side provides direct access to focusing the next monitor or specifc workspaces (one to four and special). On hold these actions move the window to the workspace or the workspace to the next monitor. Above there are keybindings to move windows and to resize them on hold.
+
+The right side promotes vim motions, page movements and for no specific reason German umlauts. The right thumbs also got an adjustment and now open new Kitty windows and tabs.
+
+![](./images/kyria-layer-lower.png)
+
+The **raise** layer finally allows you to access numbers on the left side and all sorts of brackets on the right side. The top row resembles shifted numbers.
+
+![](./images/kyria-layer-raise.png)
+
+The last layer is the **adjust** layer and can be accessed by holding the escape key from the base layer. The left side is about Bluetooth connections. Selecting some profiles will also toggle some macOS compatability layers (swapping `super` with `ctrl` and fixing umlauts). This mode can also be toggled below.
+
+The right side gives system access to music, volume and brightness.
+
+![](./images/kyria-layer-adjust.png)
 
 ## ZSA Voyager
 
