@@ -212,10 +212,10 @@
 
         lower {
             bindings = <
-&trans               &trans                    &trans                    &trans                    &trans                    &trans                                                                       &umlaut_a 0 0   &umlaut_o 0 0  &umlaut_u 0 0  &umlaut_sz 0 0  &trans  &trans
-&kp LC(LG(LS(TAB)))  &kp LG(LS(LC(NUMBER_1)))  &kp LS(LG(LC(NUMBER_2)))  &kp LS(LG(LC(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LG(LS(LC(S)))                                                            &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW   &kp RIGHT       &trans  &trans
-&kp LC(LG(TAB))      &kp LG(LC(NUMBER_1))      &kp LG(LC(NUMBER_2))      &kp LG(LC(NUMBER_3))      &kp LG(LC(NUMBER_4))      &kp LG(LC(S))      &trans  &trans  &kp LC(LG(LS(T)))  &trans                 &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &trans  &trans
-                                                                         &trans                    &trans                    &trans             &trans  &trans  &trans             &kp RG(RC(LS(ENTER)))  &trans          &trans         &trans
+&trans                           &trans                                     &trans                                     &trans                                       &trans                                         &trans                                                                                             &umlaut_a 0 0   &umlaut_o 0 0  &umlaut_u 0 0  &umlaut_sz 0 0  &trans           &trans
+&trans                           &trans                                     &mt LA(LC(LG(LEFT))) LC(LG(LS(LEFT)))      &mt LA(LC(LG(DOWN_ARROW))) LC(LG(LS(DOWN)))  &mt LC(LG(LA(UP_ARROW))) LC(LG(LS(UP_ARROW)))  &mt LA(LC(LG(RIGHT))) LS(LC(LG(RIGHT)))                                                            &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW   &kp RIGHT       &trans           &trans
+&mt LC(LG(LS(TAB))) LG(LC(TAB))  &mt LG(LC(LS(NUMBER_1))) LC(LG(NUMBER_1))  &mt LG(LC(LS(NUMBER_2))) LC(LG(NUMBER_2))  &mt LG(LC(LS(NUMBER_3))) LC(LG(NUMBER_3))    &mt LG(LC(LS(NUMBER_4))) LC(LG(NUMBER_4))      &mt LG(LC(LS(S))) LC(LG(S))              &trans  &trans  &kp LC(LG(LS(T)))  &trans                 &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &kp PRINTSCREEN  &trans
+                                                                                                                       &trans                                       &trans                                         &trans                                   &trans  &trans  &trans             &kp RG(RC(LS(ENTER)))  &trans          &trans         &trans
             >;
         };
 
@@ -239,7 +239,7 @@
 
         adjust {
             bindings = <
-&tog 3      &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4                                  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO  &trans
+&tog 3      &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4                                  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO  &kp C_MUTE
 &bt BT_CLR  &bt_sel_os 1 0  &bt_sel_os 0 1  &bt_sel_os 1 2  &bt BT_SEL 3   &bt BT_SEL 4                                   &kp C_PREV                &kp C_PLAY_PAUSE      &kp C_STOP            &kp C_NEXT                &kp C_VOL_DN           &kp C_VOLUME_UP
 &trans      &tog 1          &trans          &trans          &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans                &trans                    &trans                 &trans
                                             &trans          &trans         &trans         &trans  &trans  &trans  &trans  &trans                    &trans                &trans
