@@ -81,7 +81,7 @@
             label = "BT_OS";
         };
 
-        umlaut_mac: umlaut_mac {
+        umlaut_mac_all: umlaut_mac {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LA(U) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
@@ -170,6 +170,15 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
         };
+
+        umlaut_mac: umlaut_mac {
+            compatible = "zmk,behavior-hold-tap";
+            label = "UMLAUT_MAC";
+            bindings = <&umlaut_mac_all>, <&umlaut_mac_all>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -212,10 +221,10 @@
 
         lower-mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &umlaut_mac A  &umlaut_mac O  &umlaut_mac U  &kp LA(S)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans         &trans         &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans         &trans     &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &umlaut_mac LS(A) A  &umlaut_mac LS(O) O  &umlaut_mac LS(U) U  &kp LA(S)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans               &trans               &trans               &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans               &trans               &trans               &trans     &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans               &trans               &trans
             >;
         };
 
