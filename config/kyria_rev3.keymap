@@ -192,10 +192,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&lt 5 ESCAPE        &kp Q  &kp W  &kp E     &kp R         &kp T                                                                                                 &kp Y         &kp U             &kp I              &kp O    &kp P          &kp MINUS
-&mt LC(LCMD) GRAVE  &kp A  &kp S  &kp D     &kp F         &kp G                                                                                                 &kp H         &kp J             &kp K              &kp L    &kp SEMICOLON  &kp BACKSLASH
-&kp LEFT_CONTROL    &kp Z  &kp X  &kp C     &kp V         &kp B         &sl 4        &sk LC(LEFT_COMMAND)  &sk RC(RIGHT_COMMAND)                   &sl 2        &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
-                                  &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &mt_repeat RG(RIGHT_CONTROL) BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&lt 5 ESCAPE        &kp Q  &kp W  &kp E     &kp R         &kp T                                                                                        &kp Y         &kp U             &kp I              &kp O    &kp P          &kp MINUS
+&mt LC(LCMD) GRAVE  &kp A  &kp S  &kp D     &kp F         &kp G                                                                                        &kp H         &kp J             &kp K              &kp L    &kp SEMICOLON  &kp BACKSLASH
+&kp LEFT_CONTROL    &kp Z  &kp X  &kp C     &kp V         &kp B         &sl 4        &sk LC(LEFT_COMMAND)  &sk RC(RIGHT_COMMAND)          &sl 2        &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
+                                  &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB    &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
