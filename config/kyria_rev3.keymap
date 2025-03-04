@@ -198,7 +198,9 @@
                                 &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         base-mac {
@@ -217,6 +219,10 @@
 &mt LC(LG(LS(TAB))) LG(LC(TAB))  &mt LG(LC(LS(NUMBER_1))) LC(LG(NUMBER_1))     &mt LG(LC(LS(NUMBER_2))) LC(LG(NUMBER_2))     &mt LG(LC(LS(NUMBER_3))) LC(LG(NUMBER_3))             &mt LG(LC(LS(NUMBER_4))) LC(LG(NUMBER_4))       &mt LG(LC(LS(S))) LC(LG(S))  &trans  &trans  &kp LC(LG(LS(T)))  &trans                 &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &kp PRINTSCREEN  &trans
                                                                                                                              &trans                                                &trans                                          &trans                       &trans  &trans  &trans             &kp RG(RC(LS(ENTER)))  &trans          &trans         &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         lower-mac {
