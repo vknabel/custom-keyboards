@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 /* Uncomment this block if using RGB
 &led_strip {
@@ -193,15 +192,15 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&lt 5 ESCAPE      &kp Q  &kp W  &kp E     &kp R         &kp T                                                                                      &kp Y         &kp U             &kp I              &kp O    &kp P          &kp MINUS
-&mt LCMD GRAVE    &kp A  &kp S  &kp D     &kp F         &kp G                                                                                      &kp H         &kp J             &kp K              &kp L    &kp SEMICOLON  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V         &kp B         &mkp RCLK    &kp K_COPY          &kp K_PASTE                    &mkp LCLK    &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
-                                &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER  &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&lt 5 ESCAPE      &kp Q  &kp W  &kp E     &kp R         &kp T                                                                                        &kp Y         &kp U             &kp I              &kp O    &kp P          &kp MINUS
+&mt LCMD GRAVE    &kp A  &kp S  &kp D     &kp F         &kp G                                                                                        &kp H         &kp J             &kp K              &kp L    &kp SEMICOLON  &kp BACKSLASH
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V         &kp B         &kp K_MUTE   &kp K_COPY          &kp K_PASTE                    &kp C_AC_HOME  &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
+                                &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER    &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp K_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         base-mac {
