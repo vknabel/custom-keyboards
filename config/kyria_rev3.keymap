@@ -219,10 +219,6 @@
 &mt LC(LG(LS(TAB))) LG(LC(TAB))  &mt LG(LC(LS(NUMBER_1))) LC(LG(NUMBER_1))     &mt LG(LC(LS(NUMBER_2))) LC(LG(NUMBER_2))     &mt LG(LC(LS(NUMBER_3))) LC(LG(NUMBER_3))             &mt LG(LC(LS(NUMBER_4))) LC(LG(NUMBER_4))       &mt LG(LC(LS(S))) LC(LG(S))  &trans  &trans  &kp LC(LG(LS(T)))  &trans                 &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &kp PRINTSCREEN  &trans
                                                                                                                              &trans                                                &trans                                          &trans                       &trans  &trans  &trans             &kp RG(RC(LS(ENTER)))  &trans          &trans         &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
-                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         lower-mac {
@@ -241,6 +237,8 @@
 &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp SINGLE_QUOTE
                                         &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans            &trans             &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         adjust {
