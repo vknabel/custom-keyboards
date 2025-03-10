@@ -194,7 +194,7 @@
             bindings = <
 &lt 5 ESCAPE      &kp Q  &kp W  &kp E     &kp R         &kp T                                                                                        &kp Y         &kp U             &kp I              &kp O    &kp P          &kp MINUS
 &mt LCMD GRAVE    &kp A  &kp S  &kp D     &kp F         &kp G                                                                                        &kp H         &kp J             &kp K              &kp L    &kp SEMICOLON  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V         &kp B         &kp K_MUTE   &kp K_COPY          &kp K_PASTE                    &kp C_AC_HOME  &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V         &kp B         &kp K_MUTE   &kp C_AC_COPY       &kp C_AC_PASTE                 &kp C_AC_HOME  &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
                                 &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER    &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
