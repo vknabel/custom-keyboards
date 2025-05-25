@@ -137,9 +137,9 @@
             bindings = <&kp ESCAPE>, <&none>, <&sl 5>;
         };
 
-        hr_l: hr_l {
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HR_L";
+            label = "HOMEROW_MODS_LEFT_HAND";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -149,9 +149,9 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 34 35 36 37 38 39>;
         };
 
-        hr_r: hr_r {
+        hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HR_R";
+            label = "HOMEROW_MODS_RIGHT_HAND";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -194,7 +194,7 @@
             bindings = <
 &lt 5 ESCAPE      &kp Q  &kp W  &kp E     &kp R         &kp T                                                                                        &kp Y         &kp U             &kp I              &kp O    &kp P          &kp MINUS
 &mt LCMD GRAVE    &kp A  &kp S  &kp D     &kp F         &kp G                                                                                        &kp H         &kp J             &kp K              &kp L    &kp SEMICOLON  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V         &kp B         &kp K_MUTE   &kp C_AC_COPY       &kp C_AC_PASTE                 &kp C_AC_HOME  &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V         &kp B         &kp K_MUTE   &kp C_AC_COPY       &kp LC(V)                      &kp C_AC_HOME  &kp N         &kp M             &kp COMMA          &kp DOT  &kp FSLH       &mt RC(RIGHT_GUI) SINGLE_QUOTE
                                 &sk LCMD  &sk LEFT_ALT  &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER    &sk RC(RGUI)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
@@ -205,10 +205,10 @@
 
         base-mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
             >;
         };
 
