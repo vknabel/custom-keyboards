@@ -17,28 +17,28 @@
             label = "BT_SELECT_OS";
         };
 
-        umlaut_a_up: umlaut_a_up {
+        linux_umlaut_a_up: umlaut_a_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp C &kp KP_NUMBER_4 &kp SPACE>;
             label = "UMLAUT_A_UP";
         };
 
-        umlaut_a_small: umlaut_a_small {
+        linux_umlaut_a_small: umlaut_a_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp E &kp KP_NUMBER_4 &kp SPACE>;
             label = "UMLAUT_A_SMALL";
         };
 
-        umlaut_o_up: umlaut_o_up {
+        linux_umlaut_o_up: umlaut_o_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp D &kp KP_NUMBER_6 &kp SPACE>;
             label = "UMLAUT_O_UP";
         };
 
-        umlaut_o_small: umlaut_o_small {
+        linux_umlaut_o_small: umlaut_o_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp F &kp KP_NUMBER_6 &kp SPACE>;
@@ -52,35 +52,35 @@
             label = "UMLAUT_U_UP";
         };
 
-        umlaut_u_small: umlaut_u_small {
+        linux_umlaut_u_small: umlaut_u_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp F &kp C &kp SPACE>;
             label = "UMLAUT_U_SMALL";
         };
 
-        umlaut_sz_up: umlaut_sz_up {
+        linux_umlaut_sz_up: umlaut_sz_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp KP_NUMBER_1 &kp E &kp KP_NUMBER_9 &kp E &kp SPACE>;
             label = "UMLAUT_SZ_UP";
         };
 
-        umlaut_sz_small: umlaut_sz_small {
+        linux_umlaut_sz_small: umlaut_sz_small {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(U)) &kp U &kp D &kp F &kp SPACE>;
             label = "UMLAUT_SZ_SMALL";
         };
 
-        umlaut_mac_up: umlaut_mac_all {
+        mac_umlaut_up: umlaut_mac_all {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LA(U) &sk LEFT_SHIFT &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "UMLAUT_MAC_ALL";
         };
 
-        umlaut_mac_small: umlaut_mac_small {
+        mac_umlaut_small: umlaut_mac_small {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LA(U) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
@@ -113,7 +113,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
 
-        mt_repeat: mt_repeat {
+        mtr: mod_tap_repeat {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_REPEAT";
             bindings = <&kp>, <&kp>;
@@ -123,46 +123,46 @@
             quick-tap-ms = <200>;
         };
 
-        umlaut_a: umlaut_a {
+        lin_umla: linux_umlaut_a {
             compatible = "zmk,behavior-hold-tap";
-            label = "UMLAUT_A";
-            bindings = <&umlaut_a_up>, <&umlaut_a_small>;
+            label = "LINUX_UMLAUT_A";
+            bindings = <&linux_umlaut_a_up>, <&linux_umlaut_a_small>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        umlaut_o: umlaut_o {
+        lin_umlo: linux_umlaut_o {
             compatible = "zmk,behavior-hold-tap";
-            label = "UMLAUT_O";
-            bindings = <&umlaut_o_up>, <&umlaut_o_small>;
+            label = "LINUX_UMLAUT_O";
+            bindings = <&linux_umlaut_o_up>, <&linux_umlaut_o_small>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        umlaut_u: umlaut_u {
+        lin_umlu: linux_umlaut_u {
             compatible = "zmk,behavior-hold-tap";
-            label = "UMLAUT_U";
-            bindings = <&umlaut_u_up>, <&umlaut_u_small>;
+            label = "LINUX_UMLAUT_U";
+            bindings = <&umlaut_u_up>, <&linux_umlaut_u_small>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        umlaut_sz: umlaut_sz {
+        lin_umlsz: linux_umlaut_sz {
             compatible = "zmk,behavior-hold-tap";
-            label = "UMLAUT_SZ";
-            bindings = <&umlaut_sz_up>, <&umlaut_sz_small>;
+            label = "LINUX_UMLAUT_SZ";
+            bindings = <&linux_umlaut_sz_up>, <&linux_umlaut_sz_small>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
 
-        umlaut_mac: umlaut_mac {
+        mac_uml: mac_umlaut {
             compatible = "zmk,behavior-hold-tap";
-            label = "UMLAUT_MAC";
-            bindings = <&umlaut_mac_up>, <&umlaut_mac_small>;
+            label = "MAC_UMLAUT";
+            bindings = <&mac_umlaut_up>, <&mac_umlaut_small>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -180,10 +180,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 5 ESCAPE      &kp Q            &kp W            &kp E                      &kp R              &kp T                 &kp Y                          &kp U               &kp I                            &kp O            &kp P                     &kp MINUS
-&kp GRAVE         &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D        &hml LEFT_SHIFT F  &kp G                 &kp H                          &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K             &hmr LEFT_ALT K  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z            &kp X            &kp C                      &kp V              &kp B                 &kp N                          &kp M               &kp COMMA                        &kp DOT          &kp FSLH                  &mt RIGHT_GUI NON_US_BACKSLASH
-                                                    &mt LEFT_GUI LEFT_BRACKET  &lt 2 SPACE        &mt LEFT_SHIFT TAB    &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER         &mt RIGHT_CONTROL RIGHT_BRACKET
+&lt 5 ESCAPE      &kp Q            &kp W            &kp E                      &kp R              &kp T                 &kp Y                    &kp U               &kp I                            &kp O            &kp P                     &kp MINUS
+&kp GRAVE         &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D        &hml LEFT_SHIFT F  &kp G                 &kp H                    &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K             &hmr LEFT_ALT K  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z            &kp X            &kp C                      &kp V              &kp B                 &kp N                    &kp M               &kp COMMA                        &kp DOT          &kp FSLH                  &mt RIGHT_GUI NON_US_BACKSLASH
+                                                    &mt LEFT_GUI LEFT_BRACKET  &lt 2 SPACE        &mt LEFT_SHIFT TAB    &mtr LEFT_ALT BACKSPACE  &lt 4 ENTER         &mt RIGHT_CONTROL RIGHT_BRACKET
             >;
         };
 
@@ -198,7 +198,7 @@
 
         lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &umlaut_a 0 0   &umlaut_o 0 0   &umlaut_u 0 0  &umlaut_sz 0 0   &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &lin_umla 0 0   &lin_umlo 0 0   &lin_umlu 0 0  &lin_umlsz 0 0   &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp PRINTSCREEN  &trans
                         &trans  &trans  &trans    &trans          &trans          &trans
@@ -207,10 +207,10 @@
 
         lower-mac {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &umlaut_mac A A  &umlaut_mac O O  &umlaut_mac U U  &kp LA(S)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans           &trans           &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans           &trans           &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mac_uml A A  &mac_uml O O  &mac_uml U U  &kp LA(S)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
 
