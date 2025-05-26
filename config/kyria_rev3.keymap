@@ -192,10 +192,10 @@
             //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&lt 5 ESCAPE          &kp Q            &kp W            &kp E                &kp R              &kp T                                                                                        &kp Y         &kp U               &kp I                 &kp O            &kp P                     &kp MINUS
-&mt LEFT_CONTROL TAB  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                                                                        &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
-&mt LEFT_SHIFT GRAVE  &kp Z            &kp X            &kp C                &kp V              &kp B         &kp K_MUTE   &kp C_AC_COPY       &kp LC(V)                      &kp C_AC_HOME  &kp N         &kp M               &kp COMMA             &kp DOT          &kp FSLH                  &mt RC(RIGHT_GUI) NON_US_BACKSLASH
-                                                        &sk LCMD             &sk LEFT_ALT       &sk LC(LCMD)  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER    &sk RC(RGUI)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET
+&lt 5 ESCAPE          &kp Q            &kp W            &kp E                &kp R              &kp T                                                                                    &kp Y     &kp U               &kp I                 &kp O            &kp P                     &kp MINUS
+&mt LEFT_CONTROL TAB  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                                                                    &kp H     &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SINGLE_QUOTE
+&mt LEFT_SHIFT GRAVE  &kp Z            &kp X            &kp C                &kp V              &kp B     &kp K_MUTE   &kp C_AC_COPY       &kp LC(V)                      &kp C_AC_HOME  &kp N     &kp M               &kp COMMA             &kp DOT          &kp FSLH                  &mt RIGHT_GUI NON_US_BACKSLASH
+                                                        &sk LCMD             &sk LEFT_ALT       &sk LCMD  &lt 2 SPACE  &mt LEFT_SHIFT TAB  &mt_repeat LEFT_ALT BACKSPACE  &lt 4 ENTER    &sk RGUI  &kp LEFT_BRACKET    &kp RIGHT_BRACKET
             >;
 
             sensor-bindings =
@@ -232,10 +232,10 @@
 
         raise {
             bindings = <
-&trans      &kp EXCL      &kp AT        &kp POUND     &kp DOLLAR    &kp PERCENT                                  &kp CARET         &kp AMPS           &kp ASTRK             &trans                 &kp MINUS  &kp EQUAL
-&kp COMMA   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                                       &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp BACKSLASH
-&kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp SINGLE_QUOTE
-                                        &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans            &trans             &trans
+&trans                 &kp EXCL      &kp AT        &kp POUND     &kp DOLLAR    &kp PERCENT                                  &kp CARET         &kp AMPS           &kp ASTRK             &trans                 &kp MINUS  &kp EQUAL
+&mt LCMD COMMA         &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                                       &kp LESS_THAN     &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp BACKSLASH
+&mt LEFT_SHIFT PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &mt RIGHT_GUI SINGLE_QUOTE
+                                                   &trans        &trans        &trans       &trans  &trans  &trans  &trans  &trans            &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
