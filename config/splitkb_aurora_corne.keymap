@@ -1,0 +1,244 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    macros {
+        bt_sel_os: bt_select_os {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to2 &bt BT_SEL MACRO_PLACEHOLDER>;
+            label = "BT_SELECT_OS";
+        };
+
+        linux_umlaut_a_up: umlaut_a_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp C &kp KP_NUMBER_4 &kp SPACE>;
+            label = "UMLAUT_A_UP";
+        };
+
+        linux_umlaut_a_small: umlaut_a_small {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp E &kp KP_NUMBER_4 &kp SPACE>;
+            label = "UMLAUT_A_SMALL";
+        };
+
+        linux_umlaut_o_up: umlaut_o_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp D &kp KP_NUMBER_6 &kp SPACE>;
+            label = "UMLAUT_O_UP";
+        };
+
+        linux_umlaut_o_small: umlaut_o_small {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp F &kp KP_NUMBER_6 &kp SPACE>;
+            label = "UMLAUT_O_SMALL";
+        };
+
+        umlaut_u_up: umlaut_u_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp D &kp C &kp SPACE>;
+            label = "UMLAUT_U_UP";
+        };
+
+        linux_umlaut_u_small: umlaut_u_small {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp F &kp C &kp SPACE>;
+            label = "UMLAUT_U_SMALL";
+        };
+
+        linux_umlaut_sz_up: umlaut_sz_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp KP_NUMBER_1 &kp E &kp KP_NUMBER_9 &kp E &kp SPACE>;
+            label = "UMLAUT_SZ_UP";
+        };
+
+        linux_umlaut_sz_small: umlaut_sz_small {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp U &kp D &kp F &kp SPACE>;
+            label = "UMLAUT_SZ_SMALL";
+        };
+
+        mac_umlaut_up: umlaut_mac_all {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LA(U) &sk LEFT_SHIFT &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "UMLAUT_MAC_ALL";
+        };
+
+        mac_umlaut_small: umlaut_mac_small {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LA(U) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "UMLAUT_MAC_SMALL";
+        };
+    };
+
+    behaviors {
+        hml: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
+        };
+
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_RIGHT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
+        };
+
+        mtr: mod_tap_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_REPEAT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+        };
+
+        lin_umla: linux_umlaut_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LINUX_UMLAUT_A";
+            bindings = <&linux_umlaut_a_up>, <&linux_umlaut_a_small>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        lin_umlo: linux_umlaut_o {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LINUX_UMLAUT_O";
+            bindings = <&linux_umlaut_o_up>, <&linux_umlaut_o_small>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        lin_umlu: linux_umlaut_u {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LINUX_UMLAUT_U";
+            bindings = <&umlaut_u_up>, <&linux_umlaut_u_small>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        lin_umlsz: linux_umlaut_sz {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LINUX_UMLAUT_SZ";
+            bindings = <&linux_umlaut_sz_up>, <&linux_umlaut_sz_small>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        mac_uml: mac_umlaut {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MAC_UMLAUT";
+            bindings = <&mac_umlaut_up>, <&mac_umlaut_small>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            bindings = <
+&lt 5 ESCAPE      &kp Q            &kp W            &kp E                      &kp R              &kp T                 &kp Y                    &kp U               &kp I                            &kp O            &kp P                     &kp MINUS
+&kp GRAVE         &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D        &hml LEFT_SHIFT F  &kp G                 &kp H                    &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K             &hmr LEFT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z            &kp X            &kp C                      &kp V              &kp B                 &kp N                    &kp M               &kp COMMA                        &kp DOT          &kp FSLH                  &mt RIGHT_GUI BACKSLASH
+                                                    &mt LEFT_GUI LEFT_BRACKET  &lt 2 SPACE        &mt LEFT_SHIFT TAB    &mtr LEFT_ALT BACKSPACE  &lt 4 ENTER         &mt RIGHT_CONTROL RIGHT_BRACKET
+            >;
+        };
+
+        base-mac {
+            bindings = <
+&trans  &trans               &trans           &trans           &trans             &trans    &trans  &trans              &trans           &trans           &trans                        &trans
+&trans  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &trans    &trans  &hmr RIGHT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr RIGHT_CONTROL SEMICOLON  &trans
+&trans  &trans               &trans           &trans           &trans             &trans    &trans  &trans              &trans           &trans           &trans                        &trans
+                                              &trans           &trans             &trans    &trans  &trans              &trans
+            >;
+        };
+
+        lower {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &lin_umla 0 0   &lin_umlo 0 0   &lin_umlu 0 0  &lin_umlsz 0 0   &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp PRINTSCREEN  &trans
+                        &trans  &trans  &trans    &trans          &trans          &trans
+            >;
+        };
+
+        lower-mac {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &mac_uml A A  &mac_uml O O  &mac_uml U U  &kp LA(S)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans        &trans        &trans
+            >;
+        };
+
+        raise {
+            bindings = <
+&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET      &kp AMPERSAND     &kp ASTERISK          &trans                 &kp MINUS  &kp EQUAL
+&kp COMMA  &kp N6           &kp N7       &kp N8     &kp N9      &kp N0         &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp SQT
+&kp DOT    &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp LBKT       &kp RBKT          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp FSLH   &kp BSLH
+                                         &trans     &trans      &trans         &trans         &trans            &trans
+            >;
+        };
+
+        adjust {
+            bindings = <
+&trans      &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4    &kp C_BRIGHTNESS_MINIMUM  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_MAXIMUM  &kp C_BRIGHTNESS_AUTO  &kp K_MUTE
+&bt BT_CLR  &bt_sel_os 1 0  &bt_sel_os 0 1  &bt_sel_os 1 2  &bt BT_SEL 3   &bt BT_SEL 4     &kp K_PREVIOUS            &kp C_PLAY_PAUSE      &kp K_STOP            &kp K_NEXT                &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
+&trans      &tog 1          &trans          &trans          &trans         &trans           &trans                    &trans                &trans                &trans                    &trans                 &trans
+                                            &trans          &trans         &trans           &trans                    &trans                &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        lower-mac {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};

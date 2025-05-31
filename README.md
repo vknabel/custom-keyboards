@@ -24,15 +24,16 @@ Layer toggles are currently always positioned at the thumbs.
 
 ## Overview
 
-| **Keyboard**            | Firmware   | Keys |
-| ----------------------- | ---------- | ---- |
-| [Kyria rev3](#Kyria)    | ZMK        | 50   |
-| [ZSA Voyager](#Voyager) | QMK (Oryx) | 52   |
-| [Lily58 Pro](#Lily58)   | QMK        | 58   |
+| **Keyboard**                | Firmware   | Keys |
+| --------------------------- | ---------- | ---- |
+| [Kyria rev3](#Kyria)        | ZMK        | 50   |
+| [Corne](#Corne)             | ZMK        | 42   |
+| [ZSA Voyager](#ZSA Voyager) | QMK (Oryx) | 52   |
+| [Lily58 Pro](#Lily58 Pro)   | QMK        | 58   |
 
 ## Kyria
 
-| **Board**      | Kyria rev3                                             |
+| **Board**      | Aurora Kyria rev3                                      |
 | -------------- | ------------------------------------------------------ |
 | **Firmware**   | ZMK                                                    |
 | **Controller** | nice!nano                                              |
@@ -42,7 +43,7 @@ Layer toggles are currently always positioned at the thumbs.
 | **Keycaps**    | MBK Legend 40s grey                                    |
 | **Keymap**     | [config/kyria_rev3.keymap](./config/kyria_rev3.keymap) |
 
-The Kyria is the latest addition to my collection and my first wireless ZMK build. The goal was to get a silent and portable keyboard.
+The Kyria is my first wireless ZMK build. The goal was to get a silent and portable keyboard.
 It has an aggressive pinky-stagger, a large thumb cluster, but no number row.
 
 ![Kyria build with copper top plate](./images/kyria-keyboard.jpeg)
@@ -67,6 +68,23 @@ The last layer is the **adjust** layer and can be accessed by holding the escape
 The right side gives system access to music, volume and brightness.
 
 ![](./images/kyria-layer-adjust.png)
+
+## Corne
+
+| **Board**      | Aurora Corne                                                |
+| -------------- | ----------------------------------------------------------- |
+| **Firmware**   | ZMK                                                         |
+| **Controller** | nice!nano                                                   |
+| **Display**    | nice!view                                                   |
+| **Keys**       | 42                                                          |
+| **Switches**   | Gazzew Bobagum Silent Clear (linear, 55gf)                  |
+| **Keycaps**    | To be defined                                               |
+| **Keymap**     | [config/corne.keymap](./config/splitkb_aurora_corne.keymap) |
+
+The Corne keyboard is my latest addition after I found my Kyria just has too many keys espacially in the thumb cluster. Even after months I still have no actual use for all those keys.
+As I only use my Kyria or Voyager tented, the low profile of the keyboard is less an issue. Therefore I decided to give MX switches a chance here.
+
+At the time of writing I haven't yet decided on the keycaps or bigger adjustments of the keymap. It's more or less Kyria's layout with introduced homerows.
 
 ## ZSA Voyager
 
