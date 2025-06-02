@@ -214,10 +214,10 @@
 
         lower {
             bindings = <
-&trans                   &trans                                &trans                                &trans                                        &trans                                          &trans                                                                 &umlaut_a 0 0   &umlaut_o 0 0  &umlaut_u 0 0  &umlaut_sz 0 0  &trans           &trans
-&trans                   &mt_repeat LA(LG(LEFT)) LS(LG(LEFT))  &mt_repeat LA(LG(DOWN)) LG(LS(DOWN))  &mt_repeat LA(LG(UP_ARROW)) LG(LS(UP_ARROW))  &mt_repeat LC(LG(LA(RIGHT))) LC(LG(LS(RIGHT)))  &trans                                                                 &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW   &kp RIGHT       &trans           &trans
-&mt LG(LS(TAB)) LG(TAB)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)     &mt LG(LS(NUMBER_2)) LG(NUMBER_2)     &mt LG(LS(NUMBER_3)) LG(NUMBER_3)             &mt LG(LS(NUMBER_4)) LG(NUMBER_4)               &mt LG(LS(S)) LG(S)  &trans  &trans  &kp LG(LS(T))  &trans             &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &kp PRINTSCREEN  &trans
-                                                                                                     &trans                                        &trans                                          &trans               &trans  &trans  &trans         &kp RG(LS(ENTER))  &trans          &trans         &trans
+&trans                   &trans                                &trans                                &trans                                        &trans                                  &trans                                                                 &umlaut_a 0 0   &umlaut_o 0 0  &umlaut_u 0 0  &umlaut_sz 0 0  &trans           &trans
+&trans                   &mt_repeat LA(LG(LEFT)) LS(LG(LEFT))  &mt_repeat LA(LG(DOWN)) LG(LS(DOWN))  &mt_repeat LA(LG(UP_ARROW)) LG(LS(UP_ARROW))  &mt_repeat LG(LA(RIGHT)) LG(LS(RIGHT))  &trans                                                                 &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW   &kp RIGHT       &trans           &trans
+&mt LG(LS(TAB)) LG(TAB)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)     &mt LG(LS(NUMBER_2)) LG(NUMBER_2)     &mt LG(LS(NUMBER_3)) LG(NUMBER_3)             &mt LG(LS(NUMBER_4)) LG(NUMBER_4)       &mt LG(LS(S)) LG(S)  &trans  &trans  &kp LG(LS(T))  &trans             &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP    &kp END         &kp PRINTSCREEN  &trans
+                                                                                                     &trans                                        &trans                                  &trans               &trans  &trans  &trans         &kp RG(LS(ENTER))  &trans          &trans         &trans
             >;
         };
 
