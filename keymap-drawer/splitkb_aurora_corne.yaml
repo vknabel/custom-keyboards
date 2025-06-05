@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '-'
-  - '`'
+  - {t: TAB, h: '`'}
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT CONTROL}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - {t: ;, h: RIGHT GUI}
   - ''''
-  - LEFT CONTROL
+  - {t: '`', h: LEFT CONTROL}
   - Z
   - X
   - C
