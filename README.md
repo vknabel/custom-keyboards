@@ -88,7 +88,7 @@ At the time of writing I haven't yet decided on the keycaps or bigger adjustment
 <details>
   <summary>Corne Keymap</summary>
 
-  ![](./keymap-drawer/kyria_rev3.svg)
+  ![](./keymap-drawer/splitkb_aurora_corne.svg)
   
 </details>
 
