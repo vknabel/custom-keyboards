@@ -64,21 +64,21 @@ The right side gives system access to music, volume and brightness.
 <details>
   <summary>Kyria Keymap</summary>
 
-  ![](./keymap-drawer/kyria_rev3.svg)
+![](./keymap-drawer/kyria_rev3.svg)
 
 </details>
 
 ## Corne
 
-| **Board**      | Aurora Corne                                                |
-| -------------- | ----------------------------------------------------------- |
-| **Firmware**   | ZMK                                                         |
-| **Controller** | nice!nano                                                   |
-| **Display**    | nice!view                                                   |
-| **Keys**       | 42                                                          |
-| **Switches**   | Gazzew Bobagum Silent Clear (linear, 55gf)                  |
-| **Keycaps**    | To be defined                                               |
-| **Keymap**     | [config/corne.keymap](./config/splitkb_aurora_corne.keymap) |
+| **Board**      | Aurora Corne                                                        |
+| -------------- | ------------------------------------------------------------------- |
+| **Firmware**   | ZMK                                                                 |
+| **Controller** | nice!nano                                                           |
+| **Display**    | nice!view                                                           |
+| **Keys**       | 42                                                                  |
+| **Switches**   | Gazzew Bobagum Silent Clear (linear, 55gf)                          |
+| **Keycaps**    | Resin [CLP Keycaps](https://github.com/vvhg1/clp-keycaps/tree/main) |
+| **Keymap**     | [config/corne.keymap](./config/splitkb_aurora_corne.keymap)         |
 
 The Corne keyboard is my latest addition after I found my Kyria just has too many keys espacially in the thumb cluster. Even after months I still have no actual use for all those keys.
 As I only use my Kyria or Voyager tented, the low profile of the keyboard is less an issue. Therefore I decided to give MX switches a chance here.
@@ -88,8 +88,8 @@ At the time of writing I haven't yet decided on the keycaps or bigger adjustment
 <details>
   <summary>Corne Keymap</summary>
 
-  ![](./keymap-drawer/splitkb_aurora_corne.svg)
-  
+![](./keymap-drawer/splitkb_aurora_corne.svg)
+
 </details>
 
 ## ZSA Voyager
