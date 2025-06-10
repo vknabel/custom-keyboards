@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: splitkb_aurora_corne}
 layers:
-  base:
-  - {t: ESCAPE, h: adjust}
+  Linux:
+  - {t: ESCAPE, h: Adjust}
   - Q
   - W
   - E
@@ -38,12 +38,12 @@ layers:
   - /
   - {t: \, h: RIGHT GUI}
   - {t: '[', h: LEFT GUI}
-  - {t: SPACE, h: lower}
+  - {t: SPACE, h: Lower}
   - {t: TAB, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT ALT}
-  - {t: ENTER, h: raise}
+  - {t: ENTER, h: Raise}
   - {t: ']', h: RIGHT CONTROL}
-  base-mac:
+  macOS:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  lower:
+  Lower:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  lower-mac:
+  Lower mac:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  Raise:
   - {t: ▽, type: trans}
   - '!'
   - '@'
@@ -215,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  adjust:
+  Adjust:
   - {type: held}
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
@@ -241,7 +241,7 @@ layers:
   - VOLUME DOWN
   - VOLUME UP
   - {t: ▽, type: trans}
-  - {t: base-mac, h: toggle}
+  - {t: macOS, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
