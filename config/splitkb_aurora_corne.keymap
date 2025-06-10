@@ -185,6 +185,8 @@
 &mt LEFT_CONTROL GRAVE  &kp Z            &kp X            &kp C                      &kp V              &kp B                 &kp N                    &kp M               &kp COMMA                        &kp DOT          &kp FSLH                  &mt RIGHT_GUI BACKSLASH
                                                           &mt LEFT_GUI LEFT_BRACKET  &lt 2 SPACE        &mt LEFT_SHIFT TAB    &mtr LEFT_ALT BACKSPACE  &lt 4 ENTER         &mt RIGHT_CONTROL RIGHT_BRACKET
             >;
+
+            label = "Linux";
         };
 
         base-mac {
@@ -194,6 +196,8 @@
 &trans  &trans               &trans           &trans           &trans             &trans    &trans  &trans              &trans           &trans           &trans                        &trans
                                               &trans           &trans             &trans    &trans  &trans              &trans
             >;
+
+            label = "macOS";
         };
 
         lower {
@@ -203,6 +207,8 @@
 &mt LG(LS(TAB)) LG(TAB)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)  &mt LS(LG(NUMBER_2)) LG(NUMBER_2)           &mt LS(LG(NUMBER_3)) LG(NUMBER_3)       &mt LS(LG(NUMBER_4)) LG(NUMBER_4)             &mt LG(LS(S)) LG(S)    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp PRINTSCREEN  &trans
                                                                                                         &trans                                  &trans                                        &trans                 &trans          &trans          &trans
             >;
+
+            label = "Lower";
         };
 
         lower-mac {
@@ -212,6 +218,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans     &trans  &trans
                         &trans  &trans  &trans    &trans        &trans        &trans
             >;
+
+            label = "Lower mac";
         };
 
         raise {
@@ -221,6 +229,8 @@
 &kp DOT    &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp LBKT       &kp RBKT          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp FSLH   &kp BSLH
                                          &trans     &trans      &trans         &trans         &trans            &trans
             >;
+
+            label = "Raise";
         };
 
         adjust {
@@ -230,6 +240,8 @@
 &trans      &tog 1          &trans          &trans          &trans         &trans           &trans                    &trans                &trans                &trans                    &trans                 &trans
                                             &trans          &trans         &trans           &trans                    &trans                &trans
             >;
+
+            label = "Adjust";
         };
     };
 
