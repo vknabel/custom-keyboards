@@ -198,10 +198,10 @@
 
         lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &lin_umla 0 0   &lin_umlo 0 0   &lin_umlu 0 0  &lin_umlsz 0 0   &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp PRINTSCREEN  &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&trans                   &trans                             &trans                                      &trans                                  &trans                                        &trans                 &lin_umla 0 0   &lin_umlo 0 0   &lin_umlu 0 0  &lin_umlsz 0 0   &trans           &trans
+&trans                   &mtr LA(LG(LEFT)) LS(LG(LEFT))     &mtr LA(LG(DOWN_ARROW)) LS(LG(DOWN_ARROW))  &mtr LG(LA(UP_ARROW)) LA(LG(UP_ARROW))  &mtr LA(LG(RIGHT_ARROW)) LS(LG(RIGHT_ARROW))  &trans                 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans           &trans
+&mt LG(LS(TAB)) LG(TAB)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)  &mt LS(LG(NUMBER_2)) LG(NUMBER_2)           &mt LS(LG(NUMBER_3)) LG(NUMBER_3)       &mt LS(LG(NUMBER_4)) LG(NUMBER_4)             &mt LG(LS(S)) LG(S)    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp PRINTSCREEN  &trans
+                                                                                                        &trans                                  &trans                                        &trans                 &trans          &trans          &trans
             >;
         };
 
