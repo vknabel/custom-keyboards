@@ -228,7 +228,7 @@ layers:
   - BRIGHTNESS MAXIMUM
   - BRIGHTNESS AUTO
   - MUTE
-  - BT CLR
+  - {t: macOS, h: toggle}
   - '&bt_sel_os 1 0'
   - '&bt_sel_os 0 1'
   - '&bt_sel_os 1 2'
@@ -240,8 +240,8 @@ layers:
   - NEXT
   - VOLUME DOWN
   - VOLUME UP
+  - BT CLR
   - {t: ▽, type: trans}
-  - {t: macOS, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
