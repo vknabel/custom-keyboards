@@ -100,10 +100,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Sft+Gui+LEFT, h: Alt+Gui+LEFT}
+  - {t: Sft+Gui+DOWN ARROW, h: Alt+Gui+DOWN ARROW}
+  - {t: Alt+Gui+UP ARROW, h: Gui+Alt+UP ARROW}
+  - {t: Sft+Gui+RIGHT ARROW, h: Alt+Gui+RIGHT ARROW}
   - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
@@ -111,12 +111,12 @@ layers:
   - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Gui+TAB, h: Gui+Sft+TAB}
+  - {t: Gui+1, h: Gui+Sft+1}
+  - {t: Gui+2, h: Sft+Gui+2}
+  - {t: Gui+3, h: Sft+Gui+3}
+  - {t: Gui+4, h: Sft+Gui+4}
+  - {t: Gui+S, h: Gui+Sft+S}
   - HOME
   - PAGE DOWN
   - PAGE UP
