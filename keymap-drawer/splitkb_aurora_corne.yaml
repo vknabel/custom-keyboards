@@ -258,3 +258,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [19, 20]
+  k: Sft+RCTRL
+  l: [Linux, Lower, Raise]
+- p: [16, 15]
+  k: Sft+LCTRL
+  l: [Linux, Lower, Raise]
+- p: [16, 13]
+  k: Sft+LCTRL
+  l: [Linux, Lower, Raise]
+- p: [19, 22]
+  k: Sft+LCTRL
+  l: [Linux, Lower, Raise]
