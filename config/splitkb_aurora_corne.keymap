@@ -169,6 +169,34 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        shift+ctrl-right {
+            bindings = <&kp RS(RCTRL)>;
+            key-positions = <19 20>;
+            layers = <0 2 4>;
+        };
+
+        shift+ctrl-left {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <16 15>;
+            layers = <0 2 4>;
+        };
+
+        shift+super-left {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <16 13>;
+            layers = <0 2 4>;
+        };
+
+        shift+super-right {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <19 22>;
+            layers = <0 2 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
