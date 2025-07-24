@@ -219,10 +219,10 @@
 
         base-mac {
             bindings = <
-&trans  &trans               &trans           &trans           &trans             &trans    &trans  &trans              &trans           &trans           &trans                        &trans
-&trans  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &trans    &trans  &hmr RIGHT_SHIFT J  &hmr LEFT_GUI K  &hmr LEFT_ALT L  &hmr RIGHT_CONTROL SEMICOLON  &trans
-&trans  &trans               &trans           &trans           &trans             &trans    &trans  &trans              &trans           &trans           &trans                        &trans
-                                              &trans           &trans             &trans    &trans  &trans              &trans
+&trans              &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &trans
+&trans              &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &trans
+&mt LEFT_GUI GRAVE  &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &mt RIGHT_CONTROL SLASH
+                                    &mt LEFT_CONTROL LEFT_BRACKET  &trans  &trans    &trans  &trans  &mt LEFT_COMMAND RIGHT_BRACKET
             >;
 
             label = "macOS";
