@@ -38,7 +38,7 @@ layers:
   - /
   - {t: \, h: RIGHT GUI}
   - {t: '[', h: LEFT GUI}
-  - {t: SPACE, h: Lower}
+  - {t: SPACE, h: Lower mac}
   - {t: TAB, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT ALT}
   - {t: ENTER, h: Raise}
@@ -86,6 +86,92 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ']', h: LEFT COMMAND}
+  gaming:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - W
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&gtype_kp T'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  gaming-type:
+  - '&gtype_kp ESCAPE'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: SPACE, h: Lower mac}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&gtype_lt 6 ENTER'
+  - {t: ▽, type: trans}
   Lower:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -124,7 +210,7 @@ layers:
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -228,10 +314,10 @@ layers:
   - BRIGHTNESS MAXIMUM
   - BRIGHTNESS AUTO
   - MUTE
-  - {t: macOS, h: toggle}
-  - '&bt_sel_os 1 0'
+  - {t: Lower mac, h: toggle}
+  - '&bt_sel_os 5 0'
   - '&bt_sel_os 0 1'
-  - '&bt_sel_os 1 2'
+  - '&bt_sel_os 5 2'
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - PREVIOUS
@@ -247,7 +333,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: gaming, h: toggle}
+  - {t: macOS, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -257,103 +343,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  gaming:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - W
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&gtype_kp T'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - S
-  - D
-  - F
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  gaming-type:
-  - '&gtype_kp ESCAPE'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: SPACE, h: Lower}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&gtype_lt 4 ENTER'
   - {t: ▽, type: trans}
 combos:
 - p: [19, 20]
   k: Sft+RCTRL
-  l: [Linux, Lower, Raise]
+  l: [Linux, Lower mac, Raise]
 - p: [16, 15]
   k: Sft+LCTRL
-  l: [Linux, Lower, Raise]
+  l: [Linux, Lower mac, Raise]
 - p: [16, 13]
   k: Sft+LCTRL
-  l: [Linux, Lower, Raise]
+  l: [Linux, Lower mac, Raise]
 - p: [19, 22]
   k: Sft+LCTRL
-  l: [Linux, Lower, Raise]
+  l: [Linux, Lower mac, Raise]
