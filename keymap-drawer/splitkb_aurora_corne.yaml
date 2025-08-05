@@ -38,7 +38,7 @@ layers:
   - /
   - {t: \, h: RIGHT GUI}
   - {t: '[', h: LEFT GUI}
-  - {t: SPACE, h: Lower mac}
+  - {t: SPACE, h: Lower}
   - {t: TAB, h: LEFT SHIFT}
   - {t: BACKSPACE, h: LEFT ALT}
   - {t: ENTER, h: Raise}
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: Lower mac}
+  - {t: SPACE, h: Lower}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&gtype_lt 6 ENTER'
@@ -210,7 +210,7 @@ layers:
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
