@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,9 +315,9 @@ layers:
   - BRIGHTNESS AUTO
   - MUTE
   - {t: Lower mac, h: toggle}
-  - '&bt_sel_os 5 0'
+  - '&bt_sel_os 1 0'
   - '&bt_sel_os 0 1'
-  - '&bt_sel_os 5 2'
+  - '&bt_sel_os 1 2'
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - PREVIOUS
