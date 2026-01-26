@@ -239,7 +239,7 @@
             bindings = <
 &trans              &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &trans
 &trans              &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &trans
-&mt LEFT_GUI GRAVE  &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &mt RIGHT_CONTROL SLASH
+&mt LEFT_GUI GRAVE  &trans  &trans  &trans                         &trans  &trans    &trans  &trans  &trans                          &trans  &trans  &mt RIGHT_CONTROL BACKSLASH
                                     &mt LEFT_CONTROL LEFT_BRACKET  &trans  &trans    &trans  &trans  &mt LEFT_COMMAND RIGHT_BRACKET
             >;
 
