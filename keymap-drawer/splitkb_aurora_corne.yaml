@@ -79,7 +79,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: /, h: RIGHT CONTROL}
+  - {t: \, h: RIGHT CONTROL}
   - {t: '[', h: LEFT CONTROL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
